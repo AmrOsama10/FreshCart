@@ -36,11 +36,11 @@ export default function ResetCode() {
 
     return (
         <div className="py-16 flex justify-center items-center">
-            <div className="w-full md:w-1/2 lg:w-1/3 mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md px-8 py-10 flex flex-col items-center">
-                <h1 className="text-4xl font-semibold text-center text-green-800 dark:text-gray-200 mb-8 font-sans">Reset Code</h1>
+            <div className="w-full md:w-1/2 lg:w-1/3 mx-auto bg-white  rounded-lg shadow-md px-8 py-10 flex flex-col items-center">
+                <h1 className="text-4xl font-semibold text-center text-green-800  mb-8 font-sans">Reset Code</h1>
                 <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
                     <div className="flex items-start flex-col justify-start">
-                        <label htmlFor="resetCode" className="text-sm text-green-800 dark:text-gray-200 mr-2">Reset Code:</label>
+                        <label htmlFor="resetCode" className="text-sm text-green-800  mr-2">Reset Code:</label>
                         <input
                             onBlur={handleBlur}
                             onChange={handleChange}
@@ -48,7 +48,7 @@ export default function ResetCode() {
                             type="text"
                             id="resetCode"
                             name="resetCode"
-                            className="w-full px-3 dark:text-gray-200 dark:bg-gray-900 py-2 rounded-md border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                            className="w-full px-3 py-2 rounded-md border border-gray-300  focus:outline-none focus:ring-1 focus:ring-blue-500"
                         />
                         {touched.resetCode && errors.resetCode && <p className='text-red-500'>{errors.resetCode}</p>}
                     </div>

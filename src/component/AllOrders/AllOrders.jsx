@@ -23,7 +23,7 @@ console.log(data);
       <h1 className="mb-10 text-green-700 text-center text-4xl font-bold font-sans">
             All Orders
           </h1>
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  dark:bg-gray-800 dark:border-gray-700 ">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
           {data?.map((product, index) => {
       return (
         <div key={index} className="bg-white shadow-xl rounded-xl m-5 ">

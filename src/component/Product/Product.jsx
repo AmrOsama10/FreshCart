@@ -45,7 +45,7 @@ export default function Product({ product }) {
   return (
     <>
       <div className="max-w-2xl mx-auto">
-          <div className="bg-white shadow-xl rounded-xl max-w-sm dark:bg-gray-800 dark:border-gray-700 ">
+          <div className="bg-white shadow-xl rounded-xl max-w-sm ">
           <Link to={"/productDetails/" + product._id}>
             <img
               className="rounded-t-lg p-8"
@@ -68,7 +68,7 @@ export default function Product({ product }) {
               <i className={`fa-solid fa-heart text-xl cursor-pointer ${isActive ? "text-red-500" : "text-gray-800"}`}onClick={handleCombinedClick}></i>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-2xl text-gray-700 dark:text-white">
+              <span className="text-2xl text-gray-700 ">
                 {product.price}
                 <span className="font-sans text-green-600"> EGp</span>
               </span>
